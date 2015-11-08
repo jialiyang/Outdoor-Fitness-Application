@@ -10,9 +10,31 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Name"
         android:layout_alignBottom="@+id/Name"
         android:layout_alignParentLeft="true"
         android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginButton"
+        android:layout_marginBottom="51dp"
+        android:layout_toRightOf="@+id/nameTemp"
+        android:ems="10"
+        android:hint="    PASSWORD"
+        android:inputType="numberPassword" />
+
+    <TextView
+        android:id="@+id/nameTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Pass"
+        android:layout_alignParentLeft="true"
+        android:text="Password"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#fff" />
 
@@ -22,49 +44,12 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Pass"
         android:layout_alignLeft="@+id/Pass"
-        android:layout_alignRight="@+id/Pass"
-        android:layout_marginBottom="15dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="    USERNAME"
+        android:inputType="textPersonName" >
 
-    <TextView
-        android:id="@+id/nameTemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/LoginButton"
-        android:layout_alignParentLeft="true"
-        android:text="Password"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#fff" />
-
-    <EditText
-        android:id="@+id/Pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/LoginButton"
-        android:layout_toRightOf="@+id/nameTemp"
-        android:ems="10"
-        android:inputType="numberPassword" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Name"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="58dp"
-        android:text="OUTDOOR SPORTS "
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#fff" />
-
-    <ImageButton
-        android:id="@+id/SignUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/LoginButton"
-        android:layout_below="@+id/LoginButton"
-        android:src="@drawable/blue2button"
-        android:text="OK" />
+        <requestFocus />
+    </EditText>
 
     <ImageButton
         android:id="@+id/LoginButton"
@@ -72,7 +57,29 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/bluebutton"
+        android:background="@null"
+        android:src="@drawable/blue1"
         android:text="OK" />
+
+    <ImageButton
+        android:id="@+id/SignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LoginButton"
+        android:layout_below="@+id/LoginButton"
+        android:background="@null"
+        android:src="@drawable/blue2"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="OUTDOOR SPORTS "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff" />
 
 </RelativeLayout>

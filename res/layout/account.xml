@@ -4,53 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="45dp"
-        android:text="New Email Address"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
-        android:id="@+id/NewTFemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="14dp"
-        android:ems="10" />
-    <requestFocus />
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/NewTFemail"
-        android:layout_marginTop="26dp"
-        android:text="New Passward"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
+    
     <EditText
         android:id="@+id/NewTFpass1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/TFemail"
-        android:layout_below="@+id/textView2"
-        android:ems="10"
-        android:inputType="textPassword" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/NewTFpass1"
-        android:layout_marginTop="16dp"
-        android:text="New Password Confirm"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/NewTFemail"
+        android:ems="10"
+        android:hint="NEW PASSWORD"
+        android:inputType="textPassword" />
 
     <ImageButton
         android:id="@+id/NewimageButton1"
@@ -59,27 +23,47 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/NewTFpass2"
         android:layout_marginTop="25dp"
+        android:background="@null"
         android:src="@drawable/iconv" />
+
+    <TextView
+        android:id="@+id/manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="#fff" />
 
     <EditText
         android:id="@+id/NewTFpass2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/NewTFpass1"
         android:ems="10"
-        android:inputType="textPassword" >
-
-        
-    </EditText>
+        android:hint="NEW PASSWORD"
+        android:inputType="textPassword" />
 
     <ImageButton
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/NewTFemail"
         android:layout_alignTop="@+id/NewimageButton1"
+        android:layout_toRightOf="@+id/manager"
+        android:background="@null"
         android:src="@drawable/iconx" />
+
+    <EditText
+        android:id="@+id/NewTFemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/manager"
+        android:ems="10"
+        android:hint="NEW EMAIL" />
 
 </RelativeLayout>

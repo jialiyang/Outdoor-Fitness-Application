@@ -6,18 +6,6 @@
     android:background="@drawable/background"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/nameTemp"
-        android:layout_marginLeft="69dp"
-        android:layout_marginTop="32dp"
-        android:text="Subtitle"
-        android:textColor="#fff"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
     <fragment
         android:id="@+id/fragment1"
         android:name="com.google.android.gms.maps.MapFragment"
@@ -26,27 +14,34 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="22dp" />
-
-    <ImageButton
-        android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/nameTemp"
-        android:layout_marginRight="14dp"
-        android:src="@drawable/iconv" />
+        android:layout_below="@+id/startButton" />
 
     <TextView
         android:id="@+id/nameTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView2"
         android:text="Large Text"
-        android:textColor="#fff" 
         android:textAppearance="?android:attr/textAppearanceLarge"
-        />
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTemp"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/stopButton"
+        android:background="@null"
+        android:src="@drawable/blue5" />
+
+    <ImageButton
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/startButton"
+        android:src="@drawable/blue6"
+        android:background="@null" />
 
 </RelativeLayout>

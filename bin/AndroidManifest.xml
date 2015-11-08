@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".LoginActivity"
+            android:name="fitness.activity.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,17 +28,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="fitness.activity.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" 
+            > 
+        </activity>
+        <activity
+            android:name="fitness.activity.AccountActivity"
             android:label="@string/app_name" >
             
         </activity>
         <activity
-            android:name=".AccountActivity"
-            android:label="@string/app_name" >
-            
-        </activity>
-        <activity
-            android:name=".SignUpActivity"
+            android:name="fitness.activity.SignUpActivity"
             android:label="@string/app_name" >
             
         </activity>
